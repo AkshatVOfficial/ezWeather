@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="image/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="image/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="ezWeather" />
+    <link rel="manifest" href="image/site.webmanifest" />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section id="box">
+      <nav>
+        <h1>ezWeather</h1>
+        <select name="cities-name" id="cities-name">
+          <option>Select country</option>
+        </select>
+      </nav>
+
+      <main>
+        <section>
+          <div class="city-info">
+            <div>
+              <h2 id="city">--</h2>
+              <p id="date">--</p>
+            </div>
+            <p id="temperature">--</p>
+            <p id="weather-report">--</p>
+          </div>
+        </section>
+
+        <section id="city-info-items">
+          <div class="city-info-item">
+            <h2>Humidity</h2>
+            <p id="humidity">--</p>
+          </div>
+          <div class="city-info-item">
+            <h2>Wind</h2>
+            <p id="wind">--</p>
+          </div>
+          <div class="city-info-item">
+            <h2>Pressure</h2>
+            <p id="pressure">--</p>
+          </div>
+          <div class="city-info-item">
+            <h2>Visibility</h2>
+            <p id="visibility">--</p>
+          </div>
+        </section>
+        <section id="forecast" style="display: none">
+          <h2>5-Day Forecast</h2>
+          <div id="next-day-items">
+            <div class="next-day-item">
+              <h3>day</h3>
+              <p>temp</p>
+            </div>
+            <div class="next-day-item">
+              <h3>day</h3>
+              <p>temp</p>
+            </div>
+            <div class="next-day-item">
+              <h3>day</h3>
+              <p>temp</p>
+            </div>
+            <div class="next-day-item">
+              <h3>day</h3>
+              <p>temp</p>
+            </div>
+            <div class="next-day-item">
+              <h3>day</h3>
+              <p>temp</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Made by Akshat</p>
+      </footer>
+      <script src="city.js"></script>
+      <script src="script.js"></script>
+    </section>
+  </body>
+</html>
