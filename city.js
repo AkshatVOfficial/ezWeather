@@ -83,14 +83,6 @@ const cityList = {
   Warangal: "Warangal",
 };
 
-// for (const city in cityList) {
-//   console.log(cityList[city]);
-//   const option = document.createElement("option");
-//   option.value = cityList[city];
-//   option.textContent = cityList[city];
-//   select.appendChild(option);
-// }
-
 Object.values(cityList).forEach((city) => {
   const option = document.createElement("option");
   option.value = city;
